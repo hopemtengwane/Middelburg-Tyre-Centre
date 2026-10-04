@@ -7,10 +7,11 @@
 /* Service carousel: clean catalogue-style presentation */
 .service-showcase{background:#f7f5f0}
 .service-showcase>.kicker{color:#e31e24!important}
-.service-image{height:320px;background:transparent!important;overflow:visible;display:flex;align-items:center;justify-content:center}
-.service-image img{object-fit:contain;background:transparent!important;mix-blend-mode:multiply}
-.service-carousel article:nth-child(3) .service-image img{transform:scale(1.16)}
-.service-carousel article span{color:#111;background:#fff;border:2px solid #e31e24;border-radius:9px;padding:11px 20px}
+.service-image{height:285px;background:transparent!important;overflow:hidden;display:flex;align-items:flex-start;justify-content:center}
+.service-image img{width:100%;height:340px;object-fit:contain;object-position:center top;background:transparent!important;mix-blend-mode:multiply;transform:translateY(0)!important}
+/* The uploaded PNGs include their own red label at the bottom. Crop that label out so only the site's single HTML label is shown. */
+.service-carousel article:nth-child(3) .service-image img{transform:scale(1.08)!important;transform-origin:center top}
+.service-carousel article span{color:#111;background:#fff;border:2px solid #e31e24;border-radius:9px;padding:11px 20px;margin-top:8px}
 
 /* On pale/white areas, accent copy must be red rather than yellow for contrast. */
 .section:not(.dark):not(.quote)>.kicker,.about .kicker,.contact .kicker{color:#e31e24!important}
@@ -23,4 +24,4 @@
 .footer-links{color:#050505}.footer-links>div{border-right-color:rgba(0,0,0,.24)}.footer-links h3{color:#050505;font-size:1.9rem}.footer-links a{color:#050505;font-size:1.08rem;font-weight:600}.footer-links a:hover{color:#fff}
 @media(max-width:1100px){.hero{min-height:840px}.mega-footer{background:linear-gradient(90deg,#050505 0,#050505 35%,var(--yellow) 35%,var(--yellow) 100%)}.footer-brand img{left:3.5vw!important;top:-76px!important;width:min(470px,95%)!important}}
 @media(max-width:900px){.hero{min-height:790px}.footer-links{background:var(--yellow);color:#050505}.footer-brand{padding:120px 24px 45px!important}.footer-brand img{left:24px!important;top:-72px!important;width:min(430px,90%)!important}}
-@media(max-width:650px){.hero{min-height:740px}.actions .primary,.actions .secondary,.actions .text-link{font-size:.98rem}.service-image{height:270px}.footer-links h3{font-size:1.65rem}.footer-links a{font-size:1rem}.footer-brand{padding:100px 24px 45px!important}.footer-brand img{left:24px!important;top:-68px!important;width:min(350px,88%)!important}}
+@media(max-width:650px){.hero{min-height:740px}.actions .primary,.actions .secondary,.actions .text-link{font-size:.98rem}.service-image{height:245px}.service-image img{height:295px}.footer-links h3{font-size:1.65rem}.footer-links a{font-size:1rem}.footer-brand{padding:100px 24px 45px!important}.footer-brand img{left:24px!important;top:-68px!important;width:min(350px,88%)!important}}
