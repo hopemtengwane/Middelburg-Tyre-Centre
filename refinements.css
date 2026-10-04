@@ -8,7 +8,7 @@
 .service-showcase{background:#f7f5f0}
 .service-showcase>.kicker{color:#e31e24!important}
 .service-image{height:285px;background:transparent!important;overflow:visible;display:flex;align-items:center;justify-content:center}
-.service-image img{width:100%;height:100%;object-fit:contain;object-position:center center;background:transparent!important;mix-blend-mode:multiply;transform:none!important}
+.service-image img{display:block;width:auto!important;height:auto!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important;object-position:center center!important;background:transparent!important;mix-blend-mode:multiply;transform:none!important}
 .service-carousel article span{color:#111;background:#fff;border:2px solid #e31e24;border-radius:9px;padding:11px 20px;margin-top:8px}
 
 /* On pale/white areas, accent copy must be red rather than yellow for contrast. */
