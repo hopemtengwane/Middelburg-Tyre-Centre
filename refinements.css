@@ -24,8 +24,9 @@
 .brand-strip span:hover{background:#f7f5f0;transform:translateY(-2px)}
 .brand-strip img{display:block;width:auto;height:auto;max-width:90%;max-height:95px;object-fit:contain;object-position:center;background:transparent}
 .tyre-brands span:nth-child(2) img{transform:scale(1.85)}
-/* Firestone: leave extra horizontal breathing room so the final e is never clipped. */
-.tyre-brands span:nth-child(3) img{transform:scale(.78);max-width:86%;max-height:88px}
+/* Firestone source artwork runs tight to its right edge. Keep it fully inside its own cell. */
+.tyre-brands span:nth-child(3){padding-left:34px;padding-right:46px;overflow:visible}
+.tyre-brands span:nth-child(3) img{transform:none!important;width:100%!important;height:auto!important;max-width:100%!important;max-height:82px!important;object-fit:contain!important;object-position:center!important}
 .tyre-brands span:nth-child(4) img{transform:scale(1.55)}
 .tyre-brands span:nth-child(5) img{transform:scale(1.55)}
 .tyre-brands span:nth-child(8) img{transform:scale(1.35)}
@@ -41,6 +42,8 @@
 .spares-brands span:nth-child(12) img{transform:scale(1.25)}
 
 .section:not(.dark):not(.quote)>.kicker,.about .kicker,.contact .kicker{color:#e31e24!important}
+/* About paragraph: increase readability and visual weight beside the large heading. */
+.about>p{font-size:clamp(1.25rem,1.45vw,1.65rem)!important;line-height:1.65!important;max-width:760px}
 .mega-footer{background:linear-gradient(90deg,#050505 0,#050505 30%,var(--yellow) 30%,var(--yellow) 100%);overflow:visible}
 .footer-brand{position:relative;overflow:visible;padding:130px 3.5vw 55px!important;justify-content:flex-start!important}
 .footer-brand img{position:absolute!important;left:3.5vw!important;top:-76px!important;width:min(520px,95%)!important;height:auto!important;max-height:none!important;object-fit:contain!important;object-position:left top!important;margin:0!important;transform:none!important;z-index:5}
@@ -48,4 +51,4 @@
 .footer-links{color:#050505}.footer-links>div{border-right-color:rgba(0,0,0,.24)}.footer-links h3{color:#050505;font-size:1.9rem}.footer-links a{color:#050505;font-size:1.08rem;font-weight:600}.footer-links a:hover{color:#fff}
 @media(max-width:1100px){.hero{min-height:840px}.service-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.brand-strip{grid-template-columns:repeat(4,1fr)}.spares-brands{grid-template-columns:repeat(4,1fr)}.mega-footer{background:linear-gradient(90deg,#050505 0,#050505 35%,var(--yellow) 35%,var(--yellow) 100%)}.footer-brand img{left:3.5vw!important;top:-76px!important;width:min(470px,95%)!important}}
 @media(max-width:900px){.hero{min-height:790px}.service-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 20px}.brand-strip,.spares-brands{grid-template-columns:repeat(3,1fr)}.footer-links{background:var(--yellow);color:#050505}.footer-brand{padding:120px 24px 45px!important}.footer-brand img{left:24px!important;top:-72px!important;width:min(430px,90%)!important}}
-@media(max-width:650px){.hero{min-height:740px}.actions .primary,.actions .secondary,.actions .text-link{font-size:.98rem}.service-grid{grid-template-columns:1fr 1fr;gap:28px 12px}.service-image{height:190px}.service-grid article span{font-size:1.18rem;padding:9px 10px}.brands-section{padding:70px 22px}.brand-strip,.spares-brands{grid-template-columns:repeat(2,1fr);gap:12px}.brand-strip span,.spares-brands span{height:105px;padding:10px}.brand-strip img,.spares-brands img{max-width:94%;max-height:72px}.footer-links h3{font-size:1.65rem}.footer-links a{font-size:1rem}.footer-brand{padding:100px 24px 45px!important}.footer-brand img{left:24px!important;top:-68px!important;width:min(350px,88%)!important}}
+@media(max-width:650px){.hero{min-height:740px}.actions .primary,.actions .secondary,.actions .text-link{font-size:.98rem}.service-grid{grid-template-columns:1fr 1fr;gap:28px 12px}.service-image{height:190px}.service-grid article span{font-size:1.18rem;padding:9px 10px}.brands-section{padding:70px 22px}.brand-strip,.spares-brands{grid-template-columns:repeat(2,1fr);gap:12px}.brand-strip span,.spares-brands span{height:105px;padding:10px}.brand-strip img,.spares-brands img{max-width:94%;max-height:72px}.tyre-brands span:nth-child(3){padding-left:20px;padding-right:28px}.tyre-brands span:nth-child(3) img{max-height:62px!important}.about>p{font-size:1.15rem!important}.footer-links h3{font-size:1.65rem}.footer-links a{font-size:1rem}.footer-brand{padding:100px 24px 45px!important}.footer-brand img{left:24px!important;top:-68px!important;width:min(350px,88%)!important}}
