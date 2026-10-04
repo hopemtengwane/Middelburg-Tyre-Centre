@@ -26,8 +26,21 @@
 .brand-strip span{height:145px;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;border-right:1px solid #ddd;border-bottom:1px solid #ddd;background:#fff;transition:.2s ease;overflow:hidden}
 .brand-strip span:hover{background:#f7f5f0;transform:translateY(-2px)}
 .brand-strip img{display:block;width:auto;height:auto;max-width:90%;max-height:95px;object-fit:contain;object-position:center;background:transparent}
+/* Compensate for source logo files that contain large white/transparent margins. */
+.tyre-brands span:nth-child(2) img{transform:scale(1.85)}
+.tyre-brands span:nth-child(4) img{transform:scale(1.55)}
+.tyre-brands span:nth-child(5) img{transform:scale(1.55)}
+.tyre-brands span:nth-child(8) img{transform:scale(1.35)}
+.tyre-brands span:nth-child(9) img{transform:scale(1.35)}
 .spares-brands{grid-template-columns:repeat(6,minmax(0,1fr))}
 .spares-brands span{height:135px;padding:16px}.spares-brands img{max-width:92%;max-height:88px}
+.spares-brands span:nth-child(1) img{transform:scale(1.85)}
+.spares-brands span:nth-child(2) img{transform:scale(1.2)}
+.spares-brands span:nth-child(4) img{transform:scale(1.2)}
+.spares-brands span:nth-child(5) img{transform:scale(1.25)}
+.spares-brands span:nth-child(6) img{transform:scale(1.25)}
+.spares-brands span:nth-child(10) img{transform:scale(1.35)}
+.spares-brands span:nth-child(12) img{transform:scale(1.25)}
 
 /* On pale/white areas, accent copy must be red rather than yellow for contrast. */
 .section:not(.dark):not(.quote)>.kicker,.about .kicker,.contact .kicker{color:#e31e24!important}
