@@ -24,6 +24,7 @@
 .brand-strip span:hover{background:#f7f5f0;transform:translateY(-2px)}
 .brand-strip img{display:block;width:auto;height:auto;max-width:90%;max-height:95px;object-fit:contain;object-position:center;background:transparent}
 .tyre-brands span:nth-child(2) img{transform:scale(1.85)}
+.tyre-brands span:nth-child(3) img{transform:scale(1.55)}
 .tyre-brands span:nth-child(4) img{transform:scale(1.55)}
 .tyre-brands span:nth-child(5) img{transform:scale(1.55)}
 .tyre-brands span:nth-child(8) img{transform:scale(1.35)}
