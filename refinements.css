@@ -6,7 +6,10 @@
 /* The service assets currently in the repo are the original photos. Keep them cleanly presented until transparent replacements are added. */
 .service-image{height:320px}.service-image img{object-fit:contain}
 .mega-footer{background:linear-gradient(90deg,#050505 0,#050505 30%,var(--yellow) 30%,var(--yellow) 100%)}
+.footer-brand{overflow:hidden}
+/* The source logo contains generous transparent canvas. Crop that canvas visually so MIDDELBURG sits above the logo's black divider line in the footer, matching the intended lock-up. */
+.footer-brand img{width:min(500px,110%);height:118px;object-fit:cover;object-position:center 38%;margin:0 0 22px -8px}
 .footer-links{color:#050505}.footer-links>div{border-right-color:rgba(0,0,0,.24)}.footer-links h3{color:#050505;font-size:1.9rem}.footer-links a{color:#050505;font-size:1.08rem;font-weight:600}.footer-links a:hover{color:#fff}
-@media(max-width:1100px){.hero{min-height:840px}.mega-footer{background:linear-gradient(90deg,#050505 0,#050505 35%,var(--yellow) 35%,var(--yellow) 100%)}}
-@media(max-width:900px){.hero{min-height:790px}.footer-links{background:var(--yellow);color:#050505}}
-@media(max-width:650px){.hero{min-height:740px}.actions .primary,.actions .secondary,.actions .text-link{font-size:.98rem}.service-image{height:270px}.footer-links h3{font-size:1.65rem}.footer-links a{font-size:1rem}}
+@media(max-width:1100px){.hero{min-height:840px}.mega-footer{background:linear-gradient(90deg,#050505 0,#050505 35%,var(--yellow) 35%,var(--yellow) 100%)}.footer-brand img{height:110px}}
+@media(max-width:900px){.hero{min-height:790px}.footer-links{background:var(--yellow);color:#050505}.footer-brand img{width:min(500px,95%);height:120px;margin-left:0}}
+@media(max-width:650px){.hero{min-height:740px}.actions .primary,.actions .secondary,.actions .text-link{font-size:.98rem}.service-image{height:270px}.footer-links h3{font-size:1.65rem}.footer-links a{font-size:1rem}.footer-brand img{height:100px;object-position:center 38%}}
