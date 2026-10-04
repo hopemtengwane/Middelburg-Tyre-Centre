@@ -3,10 +3,21 @@
 .hero-inner{padding-top:105px;padding-bottom:90px}
 .actions .primary,.actions .secondary,.actions .text-link{font-size:1.05rem;letter-spacing:.07em}
 .actions .primary,.actions .secondary{padding:22px 31px}.actions .text-link{padding:21px 8px}
-.service-image{height:320px}.service-image img{object-fit:contain}
+
+/* Service carousel: clean catalogue-style presentation */
+.service-showcase{background:#f7f5f0}
+.service-showcase>.kicker{color:#e31e24!important}
+.service-image{height:320px;background:transparent!important;overflow:visible;display:flex;align-items:center;justify-content:center}
+.service-image img{object-fit:contain;background:transparent!important;mix-blend-mode:multiply}
+.service-carousel article:nth-child(3) .service-image img{transform:scale(1.16)}
+.service-carousel article span{color:#111;background:#fff;border:2px solid #e31e24;border-radius:9px;padding:11px 20px}
+
+/* On pale/white areas, accent copy must be red rather than yellow for contrast. */
+.section:not(.dark):not(.quote)>.kicker,.about .kicker,.contact .kicker{color:#e31e24!important}
+
 .mega-footer{background:linear-gradient(90deg,#050505 0,#050505 30%,var(--yellow) 30%,var(--yellow) 100%);overflow:visible}
 .footer-brand{position:relative;overflow:visible;padding:130px 3.5vw 55px!important;justify-content:flex-start!important}
-/* Footer logo intentionally overlaps the section above. Keep its size unchanged and place MIDDELBURG above the black boundary. */
+/* Approved footer logo reference position. */
 .footer-brand img{position:absolute!important;left:3.5vw!important;top:-76px!important;width:min(520px,95%)!important;height:auto!important;max-height:none!important;object-fit:contain!important;object-position:left top!important;margin:0!important;transform:none!important;z-index:5}
 .footer-brand p{margin-top:25px!important}
 .footer-links{color:#050505}.footer-links>div{border-right-color:rgba(0,0,0,.24)}.footer-links h3{color:#050505;font-size:1.9rem}.footer-links a{color:#050505;font-size:1.08rem;font-weight:600}.footer-links a:hover{color:#fff}
