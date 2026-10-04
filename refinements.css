@@ -3,13 +3,13 @@
 .hero-inner{padding-top:105px;padding-bottom:90px}
 .actions .primary,.actions .secondary,.actions .text-link{font-size:1.05rem;letter-spacing:.07em}
 .actions .primary,.actions .secondary{padding:22px 31px}.actions .text-link{padding:21px 8px}
-/* The service assets currently in the repo are the original photos. Keep them cleanly presented until transparent replacements are added. */
 .service-image{height:320px}.service-image img{object-fit:contain}
 .mega-footer{background:linear-gradient(90deg,#050505 0,#050505 30%,var(--yellow) 30%,var(--yellow) 100%)}
-.footer-brand{overflow:visible}
-/* Keep the footer logo exactly at its existing size; move only the rendered image upward. */
-.footer-brand img{display:block;width:min(430px,95%);height:auto!important;max-height:none!important;object-fit:contain!important;object-position:left center!important;margin:0 0 25px 0!important;transform:translateY(-42px)!important}
+.footer-brand{position:relative;overflow:visible;padding-top:130px!important;justify-content:flex-start!important}
+/* Target composition: MIDDELBURG sits above the top edge of the black footer while TYRE CENTRE remains inside it. */
+.footer-brand img{position:absolute!important;left:3.5vw!important;top:-96px!important;width:min(520px,95%)!important;height:auto!important;max-height:none!important;object-fit:contain!important;object-position:left center!important;margin:0!important;transform:none!important;z-index:5}
+.footer-brand p{margin-top:25px!important}
 .footer-links{color:#050505}.footer-links>div{border-right-color:rgba(0,0,0,.24)}.footer-links h3{color:#050505;font-size:1.9rem}.footer-links a{color:#050505;font-size:1.08rem;font-weight:600}.footer-links a:hover{color:#fff}
-@media(max-width:1100px){.hero{min-height:840px}.mega-footer{background:linear-gradient(90deg,#050505 0,#050505 35%,var(--yellow) 35%,var(--yellow) 100%)}.footer-brand img{width:min(400px,95%);height:auto!important;transform:translateY(-42px)!important}}
-@media(max-width:900px){.hero{min-height:790px}.footer-links{background:var(--yellow);color:#050505}.footer-brand img{width:min(430px,95%);height:auto!important;transform:translateY(-30px)!important}}
-@media(max-width:650px){.hero{min-height:740px}.actions .primary,.actions .secondary,.actions .text-link{font-size:.98rem}.service-image{height:270px}.footer-links h3{font-size:1.65rem}.footer-links a{font-size:1rem}.footer-brand img{width:min(340px,95%);height:auto!important;transform:translateY(-20px)!important}}
+@media(max-width:1100px){.hero{min-height:840px}.mega-footer{background:linear-gradient(90deg,#050505 0,#050505 35%,var(--yellow) 35%,var(--yellow) 100%)}.footer-brand img{left:3.5vw!important;top:-82px!important;width:min(470px,95%)!important}}
+@media(max-width:900px){.hero{min-height:790px}.footer-links{background:var(--yellow);color:#050505}.footer-brand{padding-top:120px!important}.footer-brand img{left:24px!important;top:-72px!important;width:min(430px,90%)!important}}
+@media(max-width:650px){.hero{min-height:740px}.actions .primary,.actions .secondary,.actions .text-link{font-size:.98rem}.service-image{height:270px}.footer-links h3{font-size:1.65rem}.footer-links a{font-size:1rem}.footer-brand{padding-top:100px!important}.footer-brand img{left:24px!important;top:-55px!important;width:min(350px,88%)!important}}
